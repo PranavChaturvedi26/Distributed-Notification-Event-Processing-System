@@ -1,0 +1,39 @@
+{
+  "name": "distributed-notification-event-processing-system",
+  "version": "1.0.0",
+  "description": "A Distributed Notification Event Processing System built with Node.js, Express, BullMQ, and Redis. This system allows for efficient handling and processing of notification events in a distributed manner.",
+  "main": "dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "worker" : "ts-node-dev --respawn --transpile-only src/worker.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PranavChaturvedi26/Distributed-Notification-Event-Processing-System.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PranavChaturvedi26/Distributed-Notification-Event-Processing-System/issues"
+  },
+  "homepage": "https://github.com/PranavChaturvedi26/Distributed-Notification-Event-Processing-System#readme",
+  "dependencies": {
+    "bullmq": "^5.1.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "ioredis": "^5.3.2",
+    "mongoose": "^8.0.3",
+    "uuid": "^9.0.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.5",
+    "@types/uuid": "^9.0.7",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
